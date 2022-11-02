@@ -84,3 +84,13 @@ while turns > 0:
     row, column = generate_ships()
     if Guess_Pattern[row][column] == '~':
         print("You have already guessed these coordinates, try again")
+    elif Hidden_Pattern[row][column] == '!':
+        print("Congratulations! You have hit and sank an enemy battleship.")
+        Guess_Pattern[row][column] = '!'
+        turns -= 1
+    else:
+        print("Unlucky soldies, you missed the target.")
+        Guess_Pattern[row][column] = '~'
+        turns -= 1
+    if count_sunk_ships(Guess_Pattern) == 3:
+        print("Congratulations! Mission complete\n All enemy ships have been successfully hit.\n Victory is ours.")
