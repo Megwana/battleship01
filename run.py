@@ -57,7 +57,7 @@ def random_ships(board):
     Using the randint imported at the begining. 
     """
     for ship in range(5):
-        ship_row, ship_col = randint(0,4), randint(0, 4)
+        ship_row, ship_col = randint(0, 4), randint(0, 4)
         while board[ship_row][ship_col] == '!':
             ship_row, ship_col = randint(0, 4), randint(0, 4)
         board[ship_row][ship_col] = '!'
@@ -76,11 +76,11 @@ def count_sunk_ships(board):
 welcome()
 random_ships(Hidden_Pattern)
 # generate the ships function with the hidden pattern
-turns = 15
+turns = 5
 while turns > 0:
     print("Enemy Battleship Board")
     create_board(Guess_Pattern)
-    row, column = generate_ships()
+    row,column = generate_ships()
     if Guess_Pattern[row][column] == '~':
         print("You have already guessed these coordinates, try again")
     elif Hidden_Pattern[row][column] == '!':
