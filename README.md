@@ -1,12 +1,12 @@
 # **Battleship Game - Project 3**
 
-Welcome to Battleships, a game that can be play in the command line and uses python. 
+Welcome to Battleships, a game that can be play in the command line using Python and deployed in Heroku.
 
 ![Battleships](/images/battleshipWelcomeImage.jpg)
 
-### [Link to Deployed App in Heroku](#)
-
 -----
+
+#### [Link to Deployed App in Heroku](#)
 
 <details>
 <summary>
@@ -20,7 +20,9 @@ Table of Contents - Click to Expand
 - [Credits](#credits)
 
 </details>
+
 -----
+
 ## Reminders
 
 * Your code must be placed in the `run.py` file
