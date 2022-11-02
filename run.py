@@ -93,3 +93,7 @@ while turns > 0:
         turns -= 1
     if count_sunk_ships(Guess_Pattern) == 3:
         print("Congratulations! Mission complete\n All enemy ships have been successfully hit.\n Victory is ours.")
+        break
+    print(' You have ' +str(turns) + ' turns remaining ')
+    if turns == 0:
+        GameOver = input('Game Over, press enter to exit the game\n')
