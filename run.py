@@ -73,9 +73,8 @@ def count_sunk_ships(board):
         if column == '!':
             count += 1
     return count
-
 welcome()
-generate_ships(Hidden_Pattern)
+random_ships(Hidden_Pattern)
 # generate the ships function with the hidden pattern
 turns = 15
 while turns > 0:
