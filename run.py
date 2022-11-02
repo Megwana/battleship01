@@ -50,3 +50,14 @@ def generate_ships():
         column = input('Enter a ship column from A to E ')
     return int(row)-1, alph_digit[column]
 
+
+def random_ships(board):
+    """
+    random ships function allows the ships to be created in random locations on the board. 
+    Using the randint imported at the begining. 
+    """
+    for ship in range(5):
+        ship_row, ship_col = randint(0,4), randint(0, 4)
+        while board[ship_row][ship_col] == '!':
+            ship_row, ship_col = randint(0, 4), randint(0, 4)
+        board[ship_row][ship_col] = '!'
