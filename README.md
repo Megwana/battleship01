@@ -6,7 +6,7 @@ Welcome to Battleships, a game that can be play in the command line using Python
 
 -----
 
-#### [Link to Deployed App in Heroku](#)
+#### [Link to Deployed App in Heroku](https://battleship01.herokuapp.com/)
 
 <details>
 <summary>
