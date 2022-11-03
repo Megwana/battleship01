@@ -52,6 +52,7 @@ The aim of the game is for the user to guess the 3 locations of the computer's h
 * The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
 * Allow larger ships more than 1X1.
 * Implement an Easy, medium and hard and make the board bigger or reduce the number of turns a player can use.
+* Add the option to restart the game.
 
 # Technology Used
 
