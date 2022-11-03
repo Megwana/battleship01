@@ -1,4 +1,6 @@
-# Imported randint from random
+"""
+Imported randint from random
+"""
 
 from random import randint
 
@@ -87,8 +89,9 @@ def count_sunk_ships(board):
 
 welcome()
 random_ships(Hidden_Pattern)
-# generate the ships function with the hidden pattern
-TURNS = 5
+# generate the ships function with the hidden pattern.
+TURNS = 15
+# player has 15 turns to guess the location of the three ships.
 while TURNS > 0:
     print("\nEnemy Battleship Board")
     create_board(Guess_Pattern)
@@ -98,15 +101,19 @@ while TURNS > 0:
     elif Hidden_Pattern[row][column] == '!':
         print("Congratulations! You have hit and sank an enemy battleship.")
         Guess_Pattern[row][column] = '!'
+        # deduct a turn each time.
         TURNS -= 1
     else:
         print("Unlucky soldier, you missed the target.")
         Guess_Pattern[row][column] = '~'
         TURNS -= 1
     if count_sunk_ships(Guess_Pattern) == 3:
+        # player needs to locate 3 ships to win.
         print("""Congratulations! Mission complete
         \n All enemy ships have been hit.""")
         break
     print(' You have ' + str(TURNS) + ' turns remaining ')
+    # end game once user has no turns remaining.
     if TURNS == 0:
+        # The ability to exit the game by pressing enter.
         GameOver = input('Game Over, press enter to exit the game\n')
