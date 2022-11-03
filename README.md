@@ -110,7 +110,7 @@ Once this had loaded, I was able to access my app through the [link](https://bat
 
 # Credits
 
-The general structure of the game is based off of Pranjal Dev's Battelship game.
+The general structure of the game is based off of Pranjal Dev's Battleship game.
 However, I have made changes to create my own game.
 ### [Pranjal Dev](https://copyassignment.com/battleship-game-code-in-python/)
 

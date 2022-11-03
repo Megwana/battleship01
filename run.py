@@ -92,7 +92,7 @@ welcome()
 random_ships(Hidden_Pattern)
 # generate the ships function with the hidden pattern.
 turns = 20
-# player has 15 turns to guess the location of the three ships.
+# player has 20 turns to guess the location of the three ships.
 while turns > 0:
     print("\nEnemy Battleship Board")
     create_board(Guess_Pattern)
@@ -109,7 +109,7 @@ while turns > 0:
         Guess_Pattern[row][column] = '~'
         turns -= 1
     if count_sunk_ships(Guess_Pattern) == 3:
-        # player needs to locate 3 ships to win.F
+        # player needs to locate 3 ships to win.
         print("""Congratulations! Mission complete
         \n All enemy ships have been hit.""")
         exit()
