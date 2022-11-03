@@ -15,6 +15,7 @@ Table of Contents - Click to Expand
 
 - [Introduction](#introduction)
 - [Feature](#features)
+- [Technology Used](#technology-used)
 - [Testing](#)
 - [Deployment](#structure)
 - [Credits](#credits)
@@ -47,6 +48,14 @@ My game is 1 player, the player must try to locate the enemy (computer)'s ships 
 * Allow larger ships more than 1X1.
 * Implement an Easy, medium and hard and make the board bigger or reduce the number of turns a player can use.
 
+# Technology Used
+
+* [Python Language](https://www.python.org/)
+    - [random randint](https://www.w3schools.com/python/ref_random_randint.asp) from Python
+* [Node js](https://nodejs.org/en/)
+* [Heroku](https://id.heroku.com) to deploy the project
+* [W3 Schools]() 
+* [PEP8 Online Checker](https://www.pythonchecker.com/)
 
 # Testing 
 
