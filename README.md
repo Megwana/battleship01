@@ -50,6 +50,11 @@ My game is 1 player, the player must try to locate the enemy (computer)'s ships 
 
 # Testing 
 
+## Python Validatior 
+
+I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecker.com/) and it came back at 96%.
+
+![PythonChecker](/images/PythonChecker.png)
 ## Bugs 
 
 1. While testing my game, I realised that you could press enter on any key and the game would continue without the personalised feature taking effect. To fix this, I added a while loop to ensure that should the name = less than 1 character, the game would repeatedly ask you until you typed one character or more for your user name. 
@@ -78,4 +83,6 @@ Once this had loaded, I was able to access my app through the [link](https://bat
 
 The general structure of the game is based off of Pranjal Dev's Battelship game.
 However, I have made changes to create my own game.
-#### [PRANJAL DEV](https://copyassignment.com/battleship-game-code-in-python/)
+### [Pranjal Dev](https://copyassignment.com/battleship-game-code-in-python/)
+
+### [W3 Schools](https://www.w3schools.com/python/ref_func_input.asp)
