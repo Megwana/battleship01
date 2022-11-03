@@ -35,6 +35,8 @@ The aim of the game is for the user to guess the 3 locations of the computer's h
 ! = explosion (A hit ship)
 ~ = a wave (open water, target missed)
 
+I did initially set the game to 15 turns, however since running practice run through's I felt 20 turns is more fitting. 
+
 # Features 
 
 ## Existing Features
