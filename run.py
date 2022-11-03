@@ -29,7 +29,7 @@ def welcome():
     You will have to guess the coordinates of the enemy ships.
     \nOne hit equals one sunken ship on the enemy\'s board.
     \n'!' symbolises and explosion, meaning they are hit targets.
-    '~' symbolises open water, meaning the shot has missed the enemy ship."
+    '~' symbolises open water, meaning the shot has missed the enemy ship.
     \nBe aware that the grid is five wide, using integers 1-5 and Letters A-E.
     """)
 
