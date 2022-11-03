@@ -40,6 +40,7 @@ My game is 1 player, the player must try to locate the enemy (computer)'s ships 
 * The game keeps count of turns and remind the user each go. 
 * The game registers when 3 ships have been hit, signalling game over. 
 * The player must select a number 1-5 and A-E, otherwise they cannot continue. 
+* The player is not allowed to pick the same coordinates again and is reminded if they have (no. turns are not deducted either).
 
 ## Future Features
 * The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
