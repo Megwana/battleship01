@@ -75,6 +75,14 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
 
 ![PythonChecker](/images/PythonChecker.png)
 
+Game Checks
+
+* I checked that the loop for the name personalisation worked. 
+* That numbers and letters outside of 1-5 and A-E could not be input as valid
+* That the symbol of hit or miss appears after the entry
+* The player is shown how many turns they have left so they can keep a track.
+* Board showing 5X5 and letters and numbers are all in line. 
+
 ## Fixed Bugs 
 
 1. While testing my game, I realised that you could press enter on any key and the game would continue without the personalised feature taking effect. To fix this, I added a while loop to ensure that should the name = less than 1 character, the game would repeatedly ask you until you typed one character or more for your user name. 
