@@ -112,7 +112,7 @@ while turns > 0:
         # player needs to locate 3 ships to win.F
         print("""Congratulations! Mission complete
         \n All enemy ships have been hit.""")
-        break
+        exit()
     print(' You have ' + str(turns) + ' turns remaining ')
     if turns == 0:
         GameOver = input('Game Over, press enter to exit the game\n')

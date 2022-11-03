@@ -28,7 +28,12 @@ Table of Contents - Click to Expand
 
 I have selected project idea 2 for my Python command line application. It is based on the game [Battleships](https://en.wikipedia.org/wiki/Battleship_(game)).
 
-My game is 1 player, the player must try to locate the enemy (computer)'s ships which are hidden on a 5 X 5 board. 
+My game is 1 player, the player must try to locate the enemy (computer)'s ships which are hidden on a 5 X 5 board.
+
+The aim of the game is for the user to guess the 3 locations of the computer's hidden ships. 
+
+! = explosion (A hit ship)
+~ = a wave (open water, target missed)
 
 
 # Features 
@@ -56,6 +61,7 @@ My game is 1 player, the player must try to locate the enemy (computer)'s ships 
 * [Heroku](https://id.heroku.com) to deploy the project
 * [W3 Schools]() 
 * [PEP8 Online Checker](https://www.pythonchecker.com/)
+* Code Institue Python Template
 
 # Testing 
 
@@ -64,7 +70,8 @@ My game is 1 player, the player must try to locate the enemy (computer)'s ships 
 I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecker.com/) and it came back at 96%.
 
 ![PythonChecker](/images/PythonChecker.png)
-## Bugs 
+
+## Fixed Bugs 
 
 1. While testing my game, I realised that you could press enter on any key and the game would continue without the personalised feature taking effect. To fix this, I added a while loop to ensure that should the name = less than 1 character, the game would repeatedly ask you until you typed one character or more for your user name. 
 
