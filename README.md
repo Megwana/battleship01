@@ -35,7 +35,6 @@ The aim of the game is for the user to guess the 3 locations of the computer's h
 ! = explosion (A hit ship)
 ~ = a wave (open water, target missed)
 
-
 # Features 
 
 ## Existing Features
@@ -47,6 +46,10 @@ The aim of the game is for the user to guess the 3 locations of the computer's h
 * The game registers when 3 ships have been hit, signalling game over. 
 * The player must select a number 1-5 and A-E, otherwise they cannot continue. 
 * The player is not allowed to pick the same coordinates again and is reminded if they have (no. turns are not deducted either).
+
+[Command Line Begining](/images/commandLine1.png)
+
+[Battleship Board Option Select](/images/FirstEntry1.png)
 
 ## Future Features
 * The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
