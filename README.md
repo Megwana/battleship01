@@ -113,4 +113,5 @@ The general structure of the game is based off of Pranjal Dev's Battelship game.
 However, I have made changes to create my own game.
 ### [Pranjal Dev](https://copyassignment.com/battleship-game-code-in-python/)
 
+W3 Schools was very helpful in researching. Especially for the name personalisation. 
 ### [W3 Schools](https://www.w3schools.com/python/ref_func_input.asp)
