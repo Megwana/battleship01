@@ -4,9 +4,10 @@ Imported randint from random
 
 from random import randint
 
-# create hidden pattern and guess pattern with a range of 5
+
 HIDDEN_PATTERN = [[' ']*5 for x in range(5)]
 GUESS_PATTERN = [[' ']*5 for x in range(5)]
+"""Create hidden pattern and guess pattern with a range of 5"""
 
 HIT_SYMBOL = '!'
 MISS_SYMBOL = '~'
@@ -15,14 +16,16 @@ alph_digit = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
 
 
 def take_name_input():
+    """Makes sure players name is 1 character or more"""
     try:
         user_name = input("Please enter your name: \n")
         if not user_name:
-            raise Exception('Your First name must be greater than 1 character.')
+            raise Exception("Your First name must be greater than 1 character")
         return user_name
     except Exception as e:
         print(e)
         return take_name_input()
+
 
 def welcome():
     """
@@ -96,6 +99,7 @@ def count_sunk_ships(board):
 
 
 def main():
+    """Define the main game loop with introduction message"""
     welcome()
     random_ships(HIDDEN_PATTERN)
     # generate the ships function with the hidden pattern.
@@ -109,7 +113,8 @@ def main():
         if board_pattern[row][column] == MISS_SYMBOL:
             print("You have already guessed these coordinates, try again")
         elif board_pattern[row][column] == HIT_SYMBOL:
-            print("Congratulations! You have hit and sank an enemy battleship.")
+            print("Congratulations! \
+                You have hit and sank an enemy battleship.")
             board_pattern[row][column] = HIT_SYMBOL
             # deduct a turn each time.
             turns -= 1
@@ -124,7 +129,8 @@ def main():
             exit()
         print(' You have ' + str(turns) + ' turns remaining ')
         if turns == 0:
-            game_over_input = input('Game Over, press enter to exit the game\n')
+            game_over_input = input('Game Over, \
+                press enter to exit the game\n')
 
 
 main()
