@@ -8,6 +8,7 @@ HIDDEN_PATTERN = [[' ']*5 for x in range(5)]
 GUESS_PATTERN = [[' ']*5 for x in range(5)]
 """Create hidden pattern and guess pattern with a range of 5"""
 
+# Constants that are used to represent what is on the board
 HIT_SYMBOL = '!'
 MISS_SYMBOL = '~'
 
