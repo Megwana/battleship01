@@ -1,7 +1,6 @@
 """
 Imported randint from random
 """
-
 from random import randint
 
 
@@ -20,7 +19,8 @@ def take_name_input():
     try:
         user_name = input("Please enter your name: \n")
         if not user_name:
-            raise Exception("Your First name must be greater than 1 character")
+            raise Exception("Your First name must be greater than"
+            + " 1 character")
         return user_name
     except Exception as e:
         print(e)
@@ -60,17 +60,24 @@ def generate_ships():
     Generate ship locations on the battleship board.
     Ensuring its 1 to 5 and A to E.
     """
-    # user to enter row number between 1 and 5
-    row = input('Enter a ship row 1 to 5 ').upper()
-    while row not in '12345':
-        print("Try enter a valid row ")
-        row = input('Enter a ship row from 1 to 5 ')
-    # user to enter column from A to E
-    column = input('Enter a ship column from A to E ').upper()
-    while column not in 'ABCDE':
-        print("Try enter a valid column ")
-        column = input('Enter a ship column from A to E ')
-    return int(row)-1, alph_digit[column]
+    # User to enter row number between 1 and 5
+    while True:
+        row = input("Enter row (1-5): ")
+        if row.isdigit() and 1 <= int(row) <= 5:
+            row = int(row) - 1
+            break
+        else:
+            print("Invalid input. Please enter a number between 1 and 5.")
+    while True:
+        column = input("Enter column (A-E): ")
+        if column.isalpha() and len(column) == 1 and 'A' <= column.upper() <= 'E':
+            column = alph_digit[column.upper()]
+            break
+        else:
+            print("Invalid input. Please enter a letter between A and E.")
+    return row, column
+
+
 
 
 def random_ships(board):
@@ -102,9 +109,9 @@ def main():
     """Define the main game loop with introduction message"""
     welcome()
     random_ships(HIDDEN_PATTERN)
-    # generate the ships function with the hidden pattern.
-    turns = 20
-    # player has 20 turns to guess the location of the three ships.
+    # Generate the ships function with the hidden pattern.
+    turns = 5
+    # Player has 5 turns to guess the location of the three ships.
     board_pattern = GUESS_PATTERN
     while turns > 0:
         print("\nEnemy Battleship Board")
@@ -113,24 +120,31 @@ def main():
         if board_pattern[row][column] == MISS_SYMBOL:
             print("You have already guessed these coordinates, try again")
         elif board_pattern[row][column] == HIT_SYMBOL:
-            print("Congratulations! \
-                You have hit and sank an enemy battleship.")
+            print("Congratulations!"
+                  + "You have hit and sank an enemy battleship.")
             board_pattern[row][column] = HIT_SYMBOL
-            # deduct a turn each time.
+            # Deduct a turn each time.
             turns -= 1
         else:
             print("Unlucky soldier, you missed the target.")
             board_pattern[row][column] = MISS_SYMBOL
             turns -= 1
-        if count_sunk_ships(board_pattern) == 3:
-            # player needs to locate 3 ships to win.
-            print("""Congratulations! Mission complete
-            \n All enemy ships have been hit.""")
-            exit()
         print(' You have ' + str(turns) + ' turns remaining ')
-        if turns == 0:
-            game_over_input = input('Game Over, \
-                press enter to exit the game\n')
+    # Player needs to locate 3 ships to win.
+    if count_sunk_ships(board_pattern) == 3:
+        print("""Congratulations! Mission complete
+        \n All enemy ships have been hit.""")
+        exit()
+    while turns == 0:
+        play_input = input("Do you want to play again? (Y/N): ").strip().lower()
+        if play_input == 'y':
+            main()
+            break
+        elif play_input == 'n':
+            print("Goodbye for now!")
+            quit()
+        else:
+            print("Please enter 'Y' or 'N'")
 
 
 main()
