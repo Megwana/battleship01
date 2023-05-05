@@ -21,7 +21,8 @@ def take_name_input():
         try:
             user_name = input("Please enter your name: \n")
             if not user_name:
-                raise ValueError("Your first name must be greater than 1 character")
+                raise ValueError("Your first name must be greater than"
+                                 + " 1 character")
             if any(char.isdigit() for char in user_name):
                 raise ValueError("Your first name must contain only letters")
             return user_name
@@ -73,7 +74,8 @@ def generate_ships():
                 "Invalid input. Please enter a number between 1 and 5.")
     while True:
         column = input("Enter column (A-E): ")
-        if column.isalpha() and len(column) == 1 and 'A' <= column.upper() <= 'E':
+        if (column.isalpha() and len(column) == 1
+                and 'A' <= column.upper() <= 'E'):
             column = alph_digit[column.upper()]
             break
         else:
