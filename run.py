@@ -89,7 +89,7 @@ def random_ships(board):
     function creates random ship locations on board.
     Using the randint imported at the begining.
     """
-    for random_ships in range(5):
+    for _ in range(5):
         ship_row, ship_col = randint(0, 4), randint(0, 4)
         while board[ship_row][ship_col] == HIT_SYMBOL:
             ship_row, ship_col = randint(0, 4), randint(0, 4)
