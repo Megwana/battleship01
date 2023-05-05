@@ -16,7 +16,9 @@ alph_digit = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
 
 
 def take_name_input():
-    """Makes sure player's name is 1 character or more"""
+    """
+    Makes sure player's name is 1 character or more
+    """
     while True:
         try:
             user_name = input("Please enter your name: \n")

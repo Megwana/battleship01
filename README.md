@@ -74,17 +74,27 @@ I did initially set the game to 15 turns, however, since running the game throug
 
 ## Python Validator 
 
-I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecker.com/) and it came back at 96%.
+I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecker.com/) and it came back at 100%. I screenshoted two images showing the total number of lines of code as it was not registering the additional lines in one.
 
-![PythonChecker](/images/PythonChecker.png)
+![PythonChecker Part 1](/images/Pep8%20pt1.png)
+
+![PythonChecker Part 2](/images/pep8%20pt.2.png)
 
 Game Checks
 
 * I checked that the loop for the name personalisation worked. 
-* That numbers and letters outside of 1-5 and A-E could not be input as valid
-* That the symbol of hit or miss appears after the entry
+    - The game prompts the user to input at least 1 character or more. The user cannot proceed if a blank input is made or if numbers are typed in. 
+* That numbers and letters outside of 1-5 and A-E could not be input as valid for the row and column.
+* That blank inputs cannot be made for the row and column.
+* That the symbol of hit or miss appears after the entry.
 * The player is shown how many turns they have left so they can keep track.
+* The player cannot input the same coordinates and will be prompted to re-enter.
 * Board showing 5X5 and letters and numbers are all in line. 
+* When the number of turns reach 0 the game ends.
+* When the number of ships hit is 3, the game ends. 
+* When the game ends, the player is prompted to input 'y' or 'n'.
+  - When 'y' is selected, the game will ask the user to re-enter their name and play again.
+  - When 'n' is selected, the game will exit the python game. 
 
 ## Fixed Bugs 
 
