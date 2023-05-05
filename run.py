@@ -21,7 +21,7 @@ def take_name_input():
         try:
             user_name = input("Please enter your name: \n")
             if not user_name:
-                raise ValueError("Your first name must be greater than"
+                raise ValueError("Your first name must be at least"
                                  + " 1 character")
             if any(char.isdigit() for char in user_name):
                 raise ValueError("Your first name must contain only letters")
