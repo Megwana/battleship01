@@ -140,11 +140,12 @@ def main():
         \n All enemy ships have been hit.""")
         exit()
     while turns == 0:
-        main = input("Do you want to play again? (Y/N): ").strip().lower()
-        if main == 'y':
+        play_input = input(
+            "Do you want to play again? (Y/N): ").strip().lower()
+        if play_input == 'y':
             main()
             break
-        elif main == 'n':
+        elif play_input == 'n':
             print("Goodbye for now!")
             quit()
         else:
