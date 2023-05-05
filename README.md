@@ -102,6 +102,13 @@ Game Checks
 
 2. Counting the number of successfully hit ships. While doing a test run, I realised the game was not registering that 3 ships had been hit and the game had not actioned the next stage. I realised I needed to add "for column in row:" underneath for "row in board". As I had keyed if the '!' to be == to column then it would increment +1. 
 
+3. The game would break in multiple places due to lack of error handling placed. I have since inserted multiple improvements such as:
+- The game no longer breaks if empty data is input. 
+- The game can end or restart should the user select yes or no (y / n).
+- Players can no longer input their first name with any digits, it will only allow 1 letter or more. 
+
+The game bug was fixed by creating a while 
+
 # Deployment
 
 The first stage of deploying my game to Heroku was checking that nothing needed to be imported to the requirement.txt document. I had only used randint from random which is already installed in Python. But I carried out pip3 freeze > requirements.txt as a precaution. 
