@@ -65,22 +65,31 @@ def generate_ships():
     """
     # User to enter row number between 1 and 5
     while True:
-        row = input("Enter row (1-5): ")
-        if row.isdigit() and 1 <= int(row) <= 5:
-            row = int(row) - 1
-            break
-        else:
-            print(
-                "Invalid input. Please enter a number between 1 and 5.")
+        try:
+            row = input("Enter row (1-5): ")
+            if row.isdigit() and 1 <= int(row) <= 5:
+                row = int(row) - 1
+                break
+            else:
+                raise ValueError(
+                    "Invalid input. Please enter a number between 1 and 5.")
+        except ValueError as e:
+            print(e)
+            print("Please try again.")
+
     while True:
-        column = input("Enter column (A-E): ")
-        if (column.isalpha() and len(column) == 1
-                and 'A' <= column.upper() <= 'E'):
-            column = alph_digit[column.upper()]
-            break
-        else:
-            print(
-                "Invalid input. Please enter a letter between A and E.")
+        try:
+            column = input("Enter column (A-E): ")
+            if (column.isalpha() and len(column) == 1
+                    and 'A' <= column.upper() <= 'E'):
+                column = alph_digit[column.upper()]
+                break
+            else:
+                raise ValueError(
+                    "Invalid input. Please enter a letter between A and E.")
+        except ValueError as e:
+            print(e)
+            print("Please try again.")
     return row, column
 
 
