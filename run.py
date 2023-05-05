@@ -71,6 +71,7 @@ def generate_ships():
                 row = int(row) - 1
                 break
             else:
+                # Raise an error if blank or invalid number is entered
                 raise ValueError(
                     "Invalid input. Please enter a number between 1 and 5.")
         except ValueError as e:
@@ -85,6 +86,7 @@ def generate_ships():
                 column = alph_digit[column.upper()]
                 break
             else:
+                # Raise an error if blank or invalid letter is entered
                 raise ValueError(
                     "Invalid input. Please enter a letter between A and E.")
         except ValueError as e:
@@ -119,7 +121,9 @@ def count_sunk_ships(board):
 
 
 def main():
-    """Define the main game loop with introduction message"""
+    """
+    Define the main game loop with introduction message
+    """
     welcome()
     random_ships(HIDDEN_PATTERN)
     # Generate the ships function with the hidden pattern.
@@ -130,17 +134,21 @@ def main():
         print("\nEnemy Battleship Board")
         create_board(board_pattern)
         row, column = generate_ships()
+        # Checks whether the coordinates have already been used on a turn
         if board_pattern[row][column] == MISS_SYMBOL:
             print("You have already guessed these coordinates, try again")
+        # Lets user know they have hit an enemy ship
         elif board_pattern[row][column] == HIT_SYMBOL:
             print("Congratulations!"
                   + "You have hit and sank an enemy battleship.")
             board_pattern[row][column] = HIT_SYMBOL
-            # Deduct a turn each time.
+            # Deduct a turn each hit
             turns -= 1
         else:
+            # Lets the user know they have missed the target
             print("Unlucky soldier, you missed the target.")
             board_pattern[row][column] = MISS_SYMBOL
+            # Deduct a turn each miss
             turns -= 1
         print(' You have ' + str(turns) + ' turns remaining ')
     # Player needs to locate 3 ships to win.
