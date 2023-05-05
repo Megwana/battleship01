@@ -54,7 +54,7 @@ def create_board(board):
     print('# A B C D E')
     row_num = 1
     for row in board:
-        print("%d|%s|" % (row_num, "|".join(row)))
+        print(f"{row_num}|{'|'.join(row)}|")
         row_num += 1
 
 
