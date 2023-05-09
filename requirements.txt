@@ -1,2 +1,2 @@
-heroku==0.1.4
-python-dateutil==1.5
+nodejs==0.1.1
+optional-django==0.1.0
