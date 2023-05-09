@@ -130,7 +130,7 @@ def main():
     welcome()
     random_ships(HIDDEN_PATTERN)
     # Generate the ships function with the hidden pattern.
-    turns = 5
+    turns = 20
     # Player has 5 turns to guess the location of the three ships.
     board_pattern = GUESS_PATTERN
     while turns > 0:
