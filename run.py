@@ -152,7 +152,7 @@ def main():
         # Lets user know they have hit an enemy ship
         elif HIDDEN_PATTERN[row][column] == HIT_SYMBOL:
             print("Congratulations!"
-                  + "You have hit and sank an enemy battleship.")
+                  + " You have hit and sank an enemy battleship.")
             guess_board[row][column] = HIT_SYMBOL
             # Deduct a turn each hit
             turns -= 1
