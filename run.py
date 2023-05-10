@@ -51,9 +51,10 @@ def create_board(board):
     """
     create battleship board
     """
+    print('\nYour Guess Board:')
     print('# A B C D E')
     row_num = 1
-    for row in board:
+    for row in guess_board:
         print(f"{row_num}|{'|'.join(row)}|")
         row_num += 1
 
