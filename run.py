@@ -31,7 +31,7 @@ def take_name_input():
 
 def welcome():
     """
-    Opening message to the game that also takes in a name.
+    Opening message to the game that takes a player name and game explanation.
     """
     print("Welcome to Battleships")
     user_name = take_name_input()
