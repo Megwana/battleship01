@@ -38,13 +38,13 @@ The aim of the game is for the user to guess the 10 locations of the computer's 
 ! = explosion (A hit ship)
 ~ = a wave (open water, target missed)
 
-I did initially set the game to 15 turns, however, since running the game through, I felt 20 turns is more fitting. Especially because the player need to find all 10 ships.
+I did initially set the game to 15 turns, however, since running the game through, I felt 20 turns is more fitting. Especially because the player needs to find all 10 ships.
 
-Originally, the game required the player to locate 3 ships. However, after test playing the game I came to the conclusion that just 3 ships is quite hard to locate out of 25 spaces across the board. In game play, you would rarely have success locating a ship at all, which could take away the enjoyment of the game. 
+Originally, the game required the player to locate 3 ships. However, after test playing the game, I concluded that just 3 ships are quite hard to locate out of 25 spaces across the board. In gameplay, you would rarely have success locating a ship at all, which could take away the enjoyment of the game. 
 
-Therefore, I decided that it would bring more enjoyment if players were more likely to come across ships by increasing the number to 10. However, still keeping it challenging as they are required to hit **all 10** in order to win.
+Therefore, I decided that it would bring more enjoyment if players were more likely to come across ships by increasing the number to 10. However, the game is still kept it challenging as they are required to hit **all 10** in order to win.
 
-After testing this number, users playing the game came across more ships which brought more of an interactive/exciting experience to the game rather than constantly seeing the 'miss' symbol and become board never hitting anything.
+After testing this number, users playing the game came across more ships which brought more of an interactive/exciting experience to the game rather than constantly seeing the 'miss' symbol and become bored never hitting anything.
 
 Users still felt challenged playing the game because they had to locate more ships in order to win. 
 
@@ -53,7 +53,7 @@ These changes have balanced the experience of the game bringing more joy and exc
 # Features 
 
 ## Existing Features
-* Welcome message which explains the game and asks for the players name.
+* Welcome message which explains the game and asks for the player's name.
 * Name entry to add a personalisation to the game. 
 * The user cannot continue unless they key a name of 1 letter or more. 
 * Ships are hidden and auto-generated at random in each game using randint.
@@ -61,7 +61,7 @@ These changes have balanced the experience of the game bringing more joy and exc
 * The game does not allow any blank data to be input. 
   - Incorrect data or blank data is managed by **error/exception handling**. See below:
   
-  The First example handles the players name input. The player will be prompted if a number or blank entry has been input and ask them to type 1 letter or more:
+  The First example handles the player's name input. The player will be prompted if a number or blank entry has been input and ask them to type 1 letter or more:
   ![Name Value Error](/images/NameValueError.png)
   The Second example handles the Row input in `find_ships`. It prompts the player is a number not between 1 and 5 has been entered, incorrect input such as a letter or blank input. An error message will appear advising the player to input a number between 1 and 5. 
   ![Row Value Error](/images/RowValueError.png)
@@ -129,7 +129,7 @@ Part 1 = 110 lines and Part 2 = 85 Lines totalling to the 195 Lines of code in `
     - [Name Test](/images/NameTest.png)
 
 * Row and Column Testing = **No Empty or Invalid data Entry**
-  - That numbers and letters outside of 1-5 and A-E could not be input as valid for the row and column.
+  - That numbers and letters outside of 1 to 5 and A to E could not be input as valid for the row and column.
   - That **EMPTY INPUTS** cannot be made for the row and column.
     - [Row Test](/images/RowTesting.png)
     - [Column Test](/images/ColumnTesting.png)
