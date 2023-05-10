@@ -33,16 +33,22 @@ I have selected project idea 2 for my Python command line application. It is bas
 
 My game is 1 player, the player must try to locate the enemy (computer) ships which are hidden on a 5 X 5 board.
 
-The aim of the game is for the user to guess the 3 locations of the computer's hidden ships. 
+The aim of the game is for the user to guess the 10 locations of the computer's hidden ships. 
 
 ! = explosion (A hit ship)
 ~ = a wave (open water, target missed)
 
 I did initially set the game to 15 turns, however, since running the game through, I felt 20 turns is more fitting. Especially because the player need to find all 10 ships.
 
-Originally, the game required the player to locate 3 ships. However, after test playing the game I came to the conclusion that only 3 ships is quite hard to locate out 25 spaces. Players in most games would likely rarely come across a ship, which could take away the enjoyment of the game. 
+Originally, the game required the player to locate 3 ships. However, after test playing the game I came to the conclusion that just 3 ships is quite hard to locate out of 25 spaces across the board. In game play, you would rarely have success locating a ship at all, which could take away the enjoyment of the game. 
 
 Therefore, I decided that it would bring more enjoyment if players were more likely to come across ships by increasing the number to 10. However, still keeping it challenging as they are required to hit **all 10** in order to win.
+
+After testing this number, users playing the game came across more ships which brought more of an interactive/exciting experience to the game rather than constantly seeing the 'miss' symbol and become board never hitting anything.
+
+Users still felt challenged playing the game because they had to locate more ships in order to win. 
+
+These changes have balanced the experience of the game bringing for joy and excitement while still maintaining a challenge.
 
 # Features 
 
@@ -172,6 +178,8 @@ In addition, I have added a ValueError feature to ensure users must have a name 
 - Players can no longer input their first name with any digits, it will only allow 1 letter or more.
 
 4. The game would print the old guess board from the previous game if the player opted 'y' to play again. To fix this, I created a reset_board function. That will reset the board and hidden pattern. This is then called after the welcome function in the `main` game play. 
+
+To conclude, the game use to previously break due to lack of error/exception handling which allowed blank entries to be input. However, this is no longer an issues and the game runs consistently.
 
 # Deployment
 
