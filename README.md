@@ -40,18 +40,19 @@ I did initially set the game to 15 turns, however, since running the game throug
 # Features 
 
 ## Existing Features
-* Welcome message
-* Personalised name added to the introduction. 
-* The user cannot continue unless they key a name of 1 character or more. 
-* ships are hidden and auto-generated at random in each game using randint.
+* Welcome message which explains the game and asks for the players name.
+* Name entry to add a personalisation to the game. 
+* The user cannot continue unless they key a name of 1 letter or more. 
+* Ships are hidden and auto-generated at random in each game using randint.
+* The player must select a row number 1-5 and column letter A-E, otherwise they cannot continue. 
+* The game does not allow any blank data to be input. 
+  - Incorrect data or blank data is managed by **error/exception handling**. 
+* The player is not allowed to pick the same coordinates again and is reminded if they have (The number of turns are not deducted either).
+* The player has 20 Turns to locate the hidden ships on the board. 
 * The game keeps count of turns and reminds the user each go. 
-* The game registers when 3 ships have been hit, signaling "game over". 
-* The player must select a number 1-5 and A-E, otherwise they cannot continue. 
-* The player is not allowed to pick the same coordinates again and is reminded if they have (no. turns are not deducted either).
-
-[Command Line Begining](/images/commandLine1.png)
-
-[Battleship Board Option Select](/images/FirstEntry1.png)
+* The game registers when 0 turns are remaining, signalling "game over". 
+* The game registers when 10 ships have been hit, signalling "game over". 
+* When the play wins/ loses they will be prompted to either exit the game or play again. 
 
 ## Future Features
 * The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
