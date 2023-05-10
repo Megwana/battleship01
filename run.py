@@ -43,7 +43,8 @@ def welcome():
     \nIf you hit 10 ships, you will win the game.
     \n'!' symbolises and explosion, meaning they are hit targets.
     \n'~' symbolises open water, meaning the shot has missed the enemy ship.
-    \nBe aware that the grid is five wide, using integers 1-5 and Letters A-E.
+    \nBe aware that the grid is five wide,
+    using integers 1 - 5 and Letters A - E.
     """)
 
 
@@ -67,7 +68,7 @@ def find_ships():
     # User to enter row number between 1 and 5
     while True:
         try:
-            row = input("Enter row (1-5): ")
+            row = input("Enter row (1 to 5): ")
             if row.isdigit() and 1 <= int(row) <= 5:
                 row = int(row) - 1
                 break
@@ -81,7 +82,7 @@ def find_ships():
 
     while True:
         try:
-            column = input("Enter column (A-E): ")
+            column = input("Enter column (A to E): ")
             if (column.isalpha() and len(column) == 1
                     and 'A' <= column.upper() <= 'E'):
                 column = alph_digit[column.upper()]
