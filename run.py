@@ -44,7 +44,7 @@ def welcome():
     \n'!' symbolises and explosion, meaning they are hit targets.
     \n'~' symbolises open water, meaning the shot has missed the enemy ship.
     \nBe aware that the grid is five wide,
-    using integers 1 - 5 and Letters A - E.
+    using integers 1 to 5 and Letters A to E.
     """)
 
 
