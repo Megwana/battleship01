@@ -48,7 +48,7 @@ After testing this number, users playing the game came across more ships which b
 
 Users still felt challenged playing the game because they had to locate more ships in order to win. 
 
-These changes have balanced the experience of the game bringing for joy and excitement while still maintaining a challenge.
+These changes have balanced the experience of the game bringing more joy and excitement while still maintaining a challenge.
 
 # Features 
 
@@ -119,13 +119,15 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
 
 ## Game Checks
 
-* I checked that the loop for the name personalisation works. 
+* Name Input Testing = **No Empty or Invalid data Entry**
+  - I checked that the loop for the name personalisation works. 
+  
   The game prompts the user to input at least 1 character or more. The user cannot proceed if a blank input is made or if numbers are typed in.
     - [Name Test](/images/NameTest.png)
 
-* Row and Column Testing
+* Row and Column Testing = **No Empty or Invalid data Entry**
   - That numbers and letters outside of 1-5 and A-E could not be input as valid for the row and column.
-  - That blank inputs cannot be made for the row and column.
+  - That **EMPTY INPUTS** cannot be made for the row and column.
     - [Row Test](/images/RowTesting.png)
     - [Column Test](/images/ColumnTesting.png)
 
@@ -140,6 +142,7 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
   - The player cannot input the same coordinates and will be prompted to re-enter.
   - The player does not lose turns if they enter duplicate coordinartes.
     - [Same Coordinates](/images/SameCoordinates.png)
+
 * Board showing 5X5 and letters and numbers are all in line. 
   - [Board Alligned](/images/BoardAlligned.png)
 
