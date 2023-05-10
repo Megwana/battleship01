@@ -16,8 +16,8 @@ Table of Contents - Click to Expand
 - [Introduction](#introduction)
 - [Feature](#features)
 - [Technology Used](#technology-used)
-- [Testing](#)
-- [Deployment](#structure)
+- [Testing](#testing)
+- [Deployment](#deployment)
 - [Credits](#credits)
 
 </details>
