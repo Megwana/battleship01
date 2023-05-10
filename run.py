@@ -103,7 +103,7 @@ def random_ships(board):
     function creates random ship locations on board.
     Using the randint imported at the begining.
     """
-    for _ in range(5):
+    for _ in range(10):
         ship_row, ship_col = randint(0, 4), randint(0, 4)
         while board[ship_row][ship_col] == HIT_SYMBOL:
             ship_row, ship_col = randint(0, 4), randint(0, 4)
@@ -131,7 +131,7 @@ def main():
     random_ships(HIDDEN_PATTERN)
     # Generate the ships function with the hidden pattern.
     turns = 20
-    # Player has 5 turns to guess the location of the three ships.
+    # Player has 20 turns to guess the location of the three ships.
     board_pattern = GUESS_PATTERN
     while turns > 0:
         print("\nEnemy Battleship Board")
@@ -154,11 +154,22 @@ def main():
             # Deduct a turn each miss
             turns -= 1
         print(' You have ' + str(turns) + ' turns remaining ')
-    # Player needs to locate 3 ships to win.
+        # Player needs to locate 3 ships to win.
     if count_sunk_ships(board_pattern) == 3:
-        print("""Congratulations! Mission complete
-        \n All enemy ships have been hit.""")
-        exit()
+        print(
+            "Congratulations! Mission complete."
+            + "\n All enemy ships have been hit.")
+        while True:
+            play_input = input(
+                "Do you want to play again? (Y/N): ").strip().lower()
+            if play_input == 'y':
+                main()
+                break
+            elif play_input == 'n':
+                print("Goodbye for now!")
+                quit()
+            else:
+                print("Please enter 'Y' or 'N'")
     while turns == 0:
         play_input = input(
             "Do you want to play again? (Y/N): ").strip().lower()
