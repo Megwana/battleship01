@@ -59,9 +59,11 @@ Therefore, I decided that it would bring more enjoyment if players were more lik
 * When the play wins/ loses they will be prompted to either exit the game or play again. 
 
 ## Future Features
-* The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
+* To implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
+* When the player selects `y` to play again, it saves the players name from the last game and does not need to ask for their name again.
 * Allow larger ships more than 1X1.
 * Implement an Easy, medium, and hard and make the board bigger or reduce the number of turns a player can use.
+
 
 # Technology Used
 
