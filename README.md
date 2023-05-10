@@ -130,6 +130,8 @@ Once this had loaded, I was able to access my app through the [link](https://bat
 
 # Credits
 
+Thank you to my mentor Akshat Garg for reviewing my project and providing feedback. 
+
 The general structure of the game is based on Pranjal Dev's Battleship game.
 However, I have made changes to create my own game.
 ### [Pranjal Dev](https://copyassignment.com/battleship-game-code-in-python/)
