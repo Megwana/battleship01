@@ -113,9 +113,11 @@ These changes have balanced the experience of the game bringing more joy and exc
 
 I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecker.com/) and it came back at 100%. I screenshoted two images showing the total number of lines of code as it was not registering the additional lines in one.
 
-![PythonChecker Part 1](/images/Pep8%20pt1.png)
+Part 1 = 110 lines and Part 2 = 85 Lines totalling to the 195 Lines of code in `run.py`.
 
-![PythonChecker Part 2](/images/pep8%20pt.2.png)
+![PythonChecker Part 1](/images/PythonChecker1.png)
+
+![PythonChecker Part 2](/images/PythonChecker2.png)
 
 ## Game Checks
 
