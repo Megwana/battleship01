@@ -182,12 +182,16 @@ In addition, I have added a ValueError feature to ensure users must have a name 
 
 3. The game would break in multiple places due to lack of error handling placed. I have since inserted multiple improvements such as:
 - The game no longer breaks if empty data is input. 
+
+These corrections can be seen in my ValueError feature screenshots provided for `Row`, `Column` and `take_name_input`.
+
 - The game can end or restart should the user select yes or no (y / n). This applies to both instances, if they win or lose.
+This is because I add a 'while' loop for when the game ends after 10 ships are hit and another 'while' loop for when the number of turns == 0.
 - Players can no longer input their first name with any digits, it will only allow 1 letter or more.
 
 4. The game would print the old guess board from the previous game if the player opted 'y' to play again. To fix this, I created a reset_board function. That will reset the board and hidden pattern. This is then called after the welcome function in the `main` game play. 
 
-To conclude, the game use to previously break due to lack of error/exception handling which allowed blank entries to be input. However, this is no longer an issues and the game runs consistently.
+To conclude, the game use to previously break due to lack of error/exception handling which allowed blank entries to be input. However, this is no longer an issue and the game runs consistently and effectively.
 
 # Deployment
 
