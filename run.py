@@ -3,15 +3,12 @@ Imported randint from random
 """
 from random import randint
 
-
+# Creates a hidden pattern and a guess pattern within the board
 HIDDEN_PATTERN = [[' '] * 5 for x in range(5)]
 GUESS_PATTERN = [[' '] * 5 for x in range(5)]
-"""Create hidden pattern and guess pattern with a range of 5"""
-
-# Constants that are used to represent what is on the board
+# Constant symbols that are used to represent what is on the board
 HIT_SYMBOL = '!'
 MISS_SYMBOL = '~'
-
 alph_digit = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
 
 
