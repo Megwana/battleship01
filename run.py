@@ -59,7 +59,7 @@ def create_board(board):
         row_num += 1
 
 
-def generate_ships():
+def find_ships():
     """
     Generate ship locations on the battleship board.
     Ensuring its 1 to 5 and A to E.
@@ -134,7 +134,7 @@ def main():
     while turns > 0:
         print("\nEnemy Battleship Board")
         create_board(board_pattern)
-        row, column = generate_ships()
+        row, column = find_ships()
         # Checks whether the coordinates have already been used on a turn
         if board_pattern[row][column] == MISS_SYMBOL:
             print("You have already guessed these coordinates, try again")
