@@ -96,7 +96,7 @@ def find_ships():
     return row, column
 
 
-def random_ships(board):
+def generate_ships(board):
     """
     function creates random ship locations on board.
     Using the randint imported at the begining.
@@ -126,7 +126,7 @@ def main():
     Define the main game loop with introduction message
     """
     welcome()
-    random_ships(HIDDEN_PATTERN)
+    generate_ships(HIDDEN_PATTERN)
     # Generate the ships function with the hidden pattern.
     turns = 20
     # Player has 20 turns to guess the location of the three ships.
