@@ -97,16 +97,18 @@ Game Checks
 
 ## Fixed Bugs 
 
-1. While testing my game, I realised that you could press enter on any key and the game would continue without the personalised feature taking effect. To fix this, I added a while loop to ensure that should the name = less than 1 character, the game would repeatedly ask you until you typed one character or more for your user name. 
+1. While testing my game, I realised that you could press enter on any key and the game would continue without the personalised feature taking effect. To fix this, I added a while loop to ensure that should the name = less than 1 character, the game would repeatedly ask you until you typed one character or more for your user name.
+
+In addition, I have added a ValueError feature to ensure users must have a name with letters and not numbers.
 
 2. Counting the number of successfully hit ships. While doing a test run, I realised the game was not registering that 3 ships had been hit and the game had not actioned the next stage. I realised I needed to add "for column in row:" underneath for "row in board". As I had keyed if the '!' to be == to column then it would increment +1. 
 
 3. The game would break in multiple places due to lack of error handling placed. I have since inserted multiple improvements such as:
 - The game no longer breaks if empty data is input. 
-- The game can end or restart should the user select yes or no (y / n).
-- Players can no longer input their first name with any digits, it will only allow 1 letter or more. 
+- The game can end or restart should the user select yes or no (y / n). This applies to both instances, if they win or lose.
+- Players can no longer input their first name with any digits, it will only allow 1 letter or more.
 
-The game bug was fixed by creating a while 
+4. The game would print the old guess board from the previous game if the player opted 'y' to play again. To fix this, I created a reset_board function. That will reset the board and hidden pattern. This is then called after the welcome function in the `main` game play. 
 
 # Deployment
 
