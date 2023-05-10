@@ -61,7 +61,7 @@ def create_board(board):
 
 def find_ships():
     """
-    Generate ship locations on the battleship board.
+    Find ship locations on the battleship board.
     Ensuring its 1 to 5 and A to E.
     """
     # User to enter row number between 1 and 5
