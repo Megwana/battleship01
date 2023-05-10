@@ -54,6 +54,10 @@ I did initially set the game to 15 turns, however, since running the game throug
 * The game registers when 10 ships have been hit, signalling "game over". 
 * When the play wins/ loses they will be prompted to either exit the game or play again. 
 
+Originally, the game required the player to locate 3 ships. However, after test playing the game I came to the conclusion that only 3 ships is quite hard to locate out 25 spaces. Players in most games would likely rarely come across a ship, which could take away the enjoyment of the game. 
+
+Therefore, I decided that it would bring more enjoyment if players were more likely to come across ships by increasing the number to 10. However, still keeping it challenging as they are required to hit **all 10** in order to win.
+
 ## Future Features
 * The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
 * Allow larger ships more than 1X1.
