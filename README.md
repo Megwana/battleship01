@@ -50,7 +50,13 @@ Therefore, I decided that it would bring more enjoyment if players were more lik
 * Ships are hidden and auto-generated at random in each game using randint.
 * The player must select a row number 1-5 and column letter A-E, otherwise they cannot continue. 
 * The game does not allow any blank data to be input. 
-  - Incorrect data or blank data is managed by **error/exception handling**. 
+  - Incorrect data or blank data is managed by **error/exception handling**. See below:
+  The First example handles the players name input. The player will be prompted if a number or blank entry has been input and ask them to type 1 letter or more:
+  ![Name Value Error](/images/NameValueError.png)
+  The Second example handles the Row input in `find_ships`. It prompts the player is a number not between 1 and 5 has been entered, incorrect input such as a letter or blank input. An error message will appear advising the player to input a number between 1 and 5. 
+  ![Row Value Error](/images/RowValueError.png)
+  The Third example handles the Column input in `find_ships`. An error message is provided if the player does input a letter between A and E, incorrect input such as a number or blank input. The player will be prompted each time to enter a letter between A and E. 
+  ![Column Value Error](/images/ColumnValueError.png)
 * The player is not allowed to pick the same coordinates again and is reminded if they have (The number of turns are not deducted either).
 * The player has 20 Turns to locate the hidden ships on the board. 
 * The game keeps count of turns and reminds the user each go. 
