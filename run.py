@@ -140,7 +140,7 @@ def main():
     generate_ships(HIDDEN_PATTERN)
     # Generate the ships function with the hidden pattern.
     turns = 20
-    # Player has 20 turns to guess the location of the three ships.
+    # Player has 20 turns to guess the location of the ten ships.
     guess_board = GUESS_PATTERN
     while turns > 0:
         create_board(guess_board)

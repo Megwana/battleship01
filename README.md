@@ -58,11 +58,22 @@ Therefore, I decided that it would bring more enjoyment if players were more lik
   The Third example handles the Column input in `find_ships`. An error message is provided if the player does input a letter between A and E, incorrect input such as a number or blank input. The player will be prompted each time to enter a letter between A and E. 
   ![Column Value Error](/images/ColumnValueError.png)
 * The player is not allowed to pick the same coordinates again and is reminded if they have (The number of turns are not deducted either).
+![Same Coordinates](/images/SameCoordinates.png)
+
 * The player has 20 Turns to locate the hidden ships on the board. 
+![20 Turns](/images/20turns.png)
+
 * The game keeps count of turns and reminds the user each go. 
+![Turns](/images/No.Turns.png)
+
 * The game registers when 0 turns are remaining, signalling "game over". 
+![Loser](/images/LostGame.png)
+
 * The game registers when 10 ships have been hit, signalling "game over". 
-* When the play wins/ loses they will be prompted to either exit the game or play again. 
+![Winner](/images/WinGame.png)
+
+* When the play wins/ loses they will be prompted to either exit the game or play again.
+![Play Again](/images/ExitGame.png) 
 
 ## Future Features
 * To implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
@@ -97,23 +108,50 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
 
 ## Game Checks
 
-* I checked that the loop for the name personalisation worked. 
-    - The game prompts the user to input at least 1 character or more. The user cannot proceed if a blank input is made or if numbers are typed in. 
-* That numbers and letters outside of 1-5 and A-E could not be input as valid for the row and column.
-* That blank inputs cannot be made for the row and column.
+* I checked that the loop for the name personalisation works. 
+  The game prompts the user to input at least 1 character or more. The user cannot proceed if a blank input is made or if numbers are typed in.
+    - [Name Test](/images/NameTest.png)
+
+* Row and Column Testing
+  - That numbers and letters outside of 1-5 and A-E could not be input as valid for the row and column.
+  - That blank inputs cannot be made for the row and column.
+    - [Row Test](/images/RowTesting.png)
+    - [Column Test](/images/ColumnTesting.png)
+
 * That the symbol of hit or miss appears after the player entry.
+  - [Hit](/images/HitMessage.png)
+  - [Miss](/images/MissMessage.png)
+
 * The player is shown how many turns they have left so they can keep track.
-* The player cannot input the same coordinates and will be prompted to re-enter.
-* The player does not lose turns if they enter duplicate coordinartes.
+  - [Number of Turns](/images/No.Turns.png)
+
+* Same Coordinates Testing
+  - The player cannot input the same coordinates and will be prompted to re-enter.
+  - The player does not lose turns if they enter duplicate coordinartes.
+    - [Same Coordinates](/images/SameCoordinates.png)
 * Board showing 5X5 and letters and numbers are all in line. 
+  - [Board Alligned](/images/BoardAlligned.png)
+
 * When the number of turns reach 0 the game ends.
+  - [0 Turns](/images/LostGame.png)
+
 * When the number of ships hit is 10, the game ends. 
+  - [10 Ships Hit](/images/WinGame.png)
+
 * When the game ends, whether the player won or lost; they are prompted to input 'y' or 'n'.
   - When 'y' is selected, the game will ask the user to re-enter their name and play again.
   - When 'n' is selected, the game will exit the python game. 
   - If blank input or anything other that 'y' or 'n' is input. The game will ask the player to input 'y' or 'n'.
+    - [Play Again](/images/PlayAgain.png)
+
 * The board resets if the player choses to play again. 
+  - [Board Reset](/images/BoardReset.png)
+
 * The boards hidden ships are randomly places each new game. 
+  - Comparison example of two different games: 
+
+    ![Ships Hidden Randomly Each Time pt1](/images/boardA.png)
+    ![Ships Hidden Randomly Each Time pt2](/images/BoardB.png)
 
 ## Fixed Bugs 
 
