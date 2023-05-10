@@ -65,14 +65,17 @@ Therefore, I decided that it would bring more enjoyment if players were more lik
 
 # Technology Used
 
-* [Python Language](https://www.python.org/)
+* [Python](https://www.python.org/)
     - [random randint](https://www.w3schools.com/python/ref_random_randint.asp) from Python
 * [Node js](https://nodejs.org/en/)
 * [Heroku](https://id.heroku.com) to deploy the project
-* [W3 Schools]() 
+* [W3 Schools](https://www.w3schools.com) 
+   - To check/ research actions to carry out.
 * [PEP8 Online Checker](https://www.pythonchecker.com/)
-* Code Institue Python Template
+  - To ensure Python code meets appropriate PEP8 Standards.
+* [Code Institue Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template)
 * [Grammarly](https://www.grammarly.com/a?utm_source=google&utm_medium=cpc&utm_campaign=brand_core_row&utm_content=brandcorerow&utm_term=grammarly&matchtype=e&placement=&network=gt%7d&network=g&gclid=CjwKCAjwzY2bBhB6EiwAPpUpZlsGqYATQkfUFW8wozDtRB9oeULmkiNT00iSLkwm9qYXjWWB4XjZPRoCE0MQAvD_BwE&gclsrc=aw.ds)
+   - To check for spelling/ grammar issues. 
 
 # Testing 
 
