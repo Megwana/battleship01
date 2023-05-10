@@ -152,14 +152,13 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
 * When the number of ships hit is 10, the game ends. 
   - [10 Ships Hit](/images/WinGame.png)
 
-* When the game ends, whether the player won or lost; they are prompted to input 'y' or 'n'.
-  - When 'y' is selected, the game will ask the user to re-enter their name and play again.
-  - When 'n' is selected, the game will exit the python game. 
-  - If blank input or anything other that 'y' or 'n' is input. The game will ask the player to input 'y' or 'n'.
-    - [Play Again](/images/PlayAgain.png)
+* Game End Testing = **No blank or invalid data entry**
+  - When the game ends, whether the player won or lost; they are prompted to input 'y' or 'n'. If a blank input or anything other that 'y' or 'n' is input. The game will ask the player to input 'y' or 'n'. See testing below of this when testing both 'y' and 'n' functionality:
 
-* Exit Game successfully
-  - [Exit Game](/images/ExitGame.png)
+    - When 'y' is selected, the game will ask the user to re-enter their name and play again.
+      - [Play Again](/images/PlayAgain.png)
+    - When 'n' is selected, the game will exit the python game.
+      - [Exit Game](/images/ExitGame.png) 
 
 * The board resets if the player choses to play again. 
   - [Board Reset](/images/BoardReset.png)
