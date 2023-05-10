@@ -6,7 +6,10 @@ Welcome to Battleships, a game that can be played in the command line using Pyth
 
 -----
 
-#### [Link to Deployed App in Heroku](https://battleship01.herokuapp.com/)
+#### [Click this Link to view the Deployed App in Heroku](https://battleship01.herokuapp.com/)
+Preview Below: 
+
+![Heroku Python Terminal](/images/AmIResponsiveBattle.png)
 
 <details>
 <summary>
@@ -95,6 +98,8 @@ Therefore, I decided that it would bring more enjoyment if players were more lik
 * [Code Institue Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template)
 * [Grammarly](https://www.grammarly.com/a?utm_source=google&utm_medium=cpc&utm_campaign=brand_core_row&utm_content=brandcorerow&utm_term=grammarly&matchtype=e&placement=&network=gt%7d&network=g&gclid=CjwKCAjwzY2bBhB6EiwAPpUpZlsGqYATQkfUFW8wozDtRB9oeULmkiNT00iSLkwm9qYXjWWB4XjZPRoCE0MQAvD_BwE&gclsrc=aw.ds)
    - To check for spelling/ grammar issues. 
+* [Am I Responsive](https://ui.dev/amiresponsive)
+  - To preview what the python terminal looks like in Heroku via the README.md.
 
 # Testing 
 
