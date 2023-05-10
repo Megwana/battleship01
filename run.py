@@ -121,11 +121,21 @@ def count_sunk_ships(board):
     return count
 
 
+def reset_board():
+    """
+    Resets the hidden pattern and guess pattern to their initial state.
+    """
+    for i in range(5):
+        for j in range(5):
+            HIDDEN_PATTERN[i][j] = ' '
+            GUESS_PATTERN[i][j] = ' '
+
 def main():
     """
     Define the main game loop with introduction message
     """
     welcome()
+    reset_board()
     generate_ships(HIDDEN_PATTERN)
     # Generate the ships function with the hidden pattern.
     turns = 20
