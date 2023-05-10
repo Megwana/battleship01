@@ -35,7 +35,7 @@ The aim of the game is for the user to guess the 3 locations of the computer's h
 ! = explosion (A hit ship)
 ~ = a wave (open water, target missed)
 
-I did initially set the game to 15 turns, however, since running the game through, I felt 20 turns is more fitting.
+I did initially set the game to 15 turns, however, since running the game through, I felt 20 turns is more fitting. Especially because the player need to find all 10 ships.
 
 Originally, the game required the player to locate 3 ships. However, after test playing the game I came to the conclusion that only 3 ships is quite hard to locate out 25 spaces. Players in most games would likely rarely come across a ship, which could take away the enjoyment of the game. 
 
