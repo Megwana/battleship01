@@ -158,6 +158,9 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
   - If blank input or anything other that 'y' or 'n' is input. The game will ask the player to input 'y' or 'n'.
     - [Play Again](/images/PlayAgain.png)
 
+* Exit Game successfully
+  - [Exit Game](/images/ExitGame.png)
+
 * The board resets if the player choses to play again. 
   - [Board Reset](/images/BoardReset.png)
 
