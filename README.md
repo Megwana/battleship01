@@ -79,21 +79,25 @@ I have checked my code on [PythonChecker PEP8 Standard](https://www.pythonchecke
 
 ![PythonChecker Part 2](/images/pep8%20pt.2.png)
 
-Game Checks
+## Game Checks
 
 * I checked that the loop for the name personalisation worked. 
     - The game prompts the user to input at least 1 character or more. The user cannot proceed if a blank input is made or if numbers are typed in. 
 * That numbers and letters outside of 1-5 and A-E could not be input as valid for the row and column.
 * That blank inputs cannot be made for the row and column.
-* That the symbol of hit or miss appears after the entry.
+* That the symbol of hit or miss appears after the player entry.
 * The player is shown how many turns they have left so they can keep track.
 * The player cannot input the same coordinates and will be prompted to re-enter.
+* The player does not lose turns if they enter duplicate coordinartes.
 * Board showing 5X5 and letters and numbers are all in line. 
 * When the number of turns reach 0 the game ends.
-* When the number of ships hit is 3, the game ends. 
-* When the game ends, the player is prompted to input 'y' or 'n'.
+* When the number of ships hit is 10, the game ends. 
+* When the game ends, whether the player won or lost; they are prompted to input 'y' or 'n'.
   - When 'y' is selected, the game will ask the user to re-enter their name and play again.
   - When 'n' is selected, the game will exit the python game. 
+  - If blank input or anything other that 'y' or 'n' is input. The game will ask the player to input 'y' or 'n'.
+* The board resets if the player choses to play again. 
+* The boards hidden ships are randomly places each new game. 
 
 ## Fixed Bugs 
 
