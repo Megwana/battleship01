@@ -162,12 +162,12 @@ def main():
             guess_board[row][column] = MISS_SYMBOL
             # Deduct a turn each miss
             turns -= 1
-        print(' You have ' + str(turns) + ' turns remaining ')
+        print(' You have ' + str(turns) + ' turns remaining. Game Over.')
         # Player needs to locate 10 ships to win.
     if count_sunk_ships(guess_board) == 10:
         print(
             "Congratulations! Mission complete."
-            + "\n All enemy ships have been hit.")
+            + "\n You Won, all enemy ships have been hit.")
         while True:
             play_input = input(
                 "Do you want to play again? (Y/N): ").strip().lower()
