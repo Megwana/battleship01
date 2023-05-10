@@ -47,7 +47,7 @@ def welcome():
     """)
 
 
-def create_board(board):
+def create_board(guess_board):
     """
     create battleship board
     """
