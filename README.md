@@ -57,7 +57,6 @@ I did initially set the game to 15 turns, however, since running the game throug
 * The implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
 * Allow larger ships more than 1X1.
 * Implement an Easy, medium, and hard and make the board bigger or reduce the number of turns a player can use.
-* Add the option to restart the game.
 
 # Technology Used
 
