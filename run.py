@@ -21,7 +21,7 @@ def take_name_input():
             user_name = input("Please enter your name: \n")
             if not user_name:
                 raise ValueError("Your first name must be at least"
-                                 + " 1 character")
+                                 + " 1 letter")
             if any(char.isdigit() for char in user_name):
                 raise ValueError("Your first name must contain only letters")
             return user_name
@@ -130,6 +130,7 @@ def reset_board():
             HIDDEN_PATTERN[i][j] = ' '
             GUESS_PATTERN[i][j] = ' '
 
+
 def main():
     """
     Define the main game loop with introduction message
@@ -142,7 +143,6 @@ def main():
     # Player has 20 turns to guess the location of the three ships.
     guess_board = GUESS_PATTERN
     while turns > 0:
-        print("\nEnemy Battleship Board")
         create_board(guess_board)
         row, column = find_ships()
         # Checks whether the coordinates have already been used on a turn
