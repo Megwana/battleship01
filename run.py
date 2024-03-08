@@ -99,55 +99,39 @@ class BattleshipGame:
                 self.GUESS_PATTERN[i][j] = ' '
 
 def main():
-    """
-    Define the main game loop with introduction message
-    """
-    welcome()
-    reset_board()
-    generate_ships(HIDDEN_PATTERN)
-    # Generate the ships function with the hidden pattern.
+    game = BattleshipGame()
+    game.welcome()
+    game.reset_board()  # Reset the game board for a new game
+    game.generate_ships(game.HIDDEN_PATTERN)  # Generate ships on the hidden pattern board
+
+    # Start the game loop
     turns = 20
-    # Player has 20 turns to guess the location of the ten ships.
-    guess_board = GUESS_PATTERN
+    guess_board = game.GUESS_PATTERN
     while turns > 0:
-        create_board(guess_board)
-        row, column = find_ships()
-        # Checks whether the coordinates have already been used on a turn
-        if guess_board[row][column] == MISS_SYMBOL:
+        game.create_board(guess_board)
+        row, column = game.find_ships()
+        if guess_board[row][column] == game.MISS_SYMBOL:
             print("You have already guessed these coordinates, try again")
-        # Lets user know they have hit an enemy ship
-        elif HIDDEN_PATTERN[row][column] == HIT_SYMBOL:
-            print("Congratulations!"
-                  + " You have hit and sank an enemy battleship.")
-            guess_board[row][column] = HIT_SYMBOL
-            # Deduct a turn each hit
+        elif game.HIDDEN_PATTERN[row][column] == game.HIT_SYMBOL:
+            print("Congratulations! You have hit and sank an enemy battleship.")
+            guess_board[row][column] = game.HIT_SYMBOL
             turns -= 1
         else:
-            # Lets the user know they have missed the target
             print("Unlucky soldier, you missed the target.")
-            guess_board[row][column] = MISS_SYMBOL
-            # Deduct a turn each miss
+            guess_board[row][column] = game.MISS_SYMBOL
             turns -= 1
         print(' You have ' + str(turns) + ' turns remaining. Game Over.')
-        # Player needs to locate 10 ships to win.
-    if count_sunk_ships(guess_board) == 10:
-        print(
-            "Congratulations! Mission complete."
-            + "\n You Won, all enemy ships have been hit.")
-        while True:
-            play_input = input(
-                "Do you want to play again? (Y/N): ").strip().lower()
-            if play_input == 'y':
-                main()
-                break
-            elif play_input == 'n':
-                print("Goodbye for now!")
-                quit()
-            else:
-                print("Please enter 'Y' or 'N'")
-    while turns == 0:
-        play_input = input(
-            "Do you want to play again? (Y/N): ").strip().lower()
+
+    # Check if all ships are sunk
+    if game.count_sunk_ships(guess_board) == 10:
+        print("Congratulations! Mission complete.")
+        print("You Won, all enemy ships have been hit.")
+    else:
+        print("Game Over. You ran out of turns.")
+
+    # Ask if the player wants to play again
+    while True:
+        play_input = input("Do you want to play again? (Y/N): ").strip().lower()
         if play_input == 'y':
             main()
             break
@@ -157,5 +141,6 @@ def main():
         else:
             print("Please enter 'Y' or 'N'")
 
-
-main()
+# Call the main function to start the game
+if __name__ == "__main__":
+    main()
