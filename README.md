@@ -86,7 +86,9 @@ These changes have balanced the experience of the game bringing more joy and exc
 ![Play Again](/images/ExitGame.png) 
 
 ## Future Features
-* To implement the name feature at the end of the game to give the user a personalised congratulations or commiserations. 
+* [x] To implement the name feature at the end of the game to give the user a personalised congratulations or commiserations.
+**This feature has been successfully added.**
+
 * When the player selects `y` to play again, it saves the players name from the last game and does not need to ask for their name again.
 * Allow larger ships more than 1X1.
 * Implement an Easy, medium, and hard and make the board bigger or reduce the number of turns a player can use.
